@@ -12,7 +12,7 @@ main:
     url: "/resume"
 
   - title: "LinkedIn"
-    url: "[PROFILE]"
+    url: "https://www.linkedin.com/in/min-zhe-cheah-13b20025a/"
     external: true
 
   - title: "GitHub"
