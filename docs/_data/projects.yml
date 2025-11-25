@@ -1,0 +1,32 @@
+- title: "AutoTrip"
+  badge: "Hackathon Winner"
+  description: "AI-powered travel planning application integrating Google Maps, Amadeus, and Instagram APIs. Generates personalized itineraries with cost breakdowns and embedded maps using LangChain and OpenAI."
+  github: "[REPO]"
+  technologies:
+    - TypeScript
+    - Next.js
+    - TailwindCSS
+    - Python
+    - LangChain
+    - Vercel
+    - Render
+  media: ""
+
+- title: "Dropbox Clone"
+  badge: ""
+  description: "Secure file storage and retrieval system implementing end-to-end encryption, HMAC verification, and linked-list data blocks. Features file sharing with public-key encryption and digital signatures."
+  github: "[REPO]"
+  technologies:
+    - Go
+    - Cryptography
+    - Distributed Systems
+  media: ""
+
+- title: "Prompt Driven"
+  badge: "Open Source"
+  description: "Open source contribution implementing stdout/stderr capture and display system for CLI tooling. Improved debugging visibility across core operations, reducing debugging time by 20%."
+  github: "[REPO]"
+  technologies:
+    - Python
+    - CLI Development
+  media: ""

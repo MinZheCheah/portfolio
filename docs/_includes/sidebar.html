@@ -1,0 +1,24 @@
+<aside class="sidebar">
+  <div class="sidebar-header">
+    <a href="{{ '/' | relative_url }}" class="sidebar-logo">MZC</a>
+  </div>
+
+  <nav class="sidebar-nav">
+    {% for item in site.data.navigation.main %}
+      {% assign active = "" %}
+      {% if page.url contains item.url and item.url != "/" %}
+        {% assign active = "active" %}
+      {% endif %}
+
+      {% if item.external %}
+        <a href="{{ item.url }}" target="_blank" rel="noopener" class="sidebar-item external {{ active }}">
+          {{ item.title }}
+        </a>
+      {% else %}
+        <a href="{{ item.url | relative_url }}" class="sidebar-item {{ active }}">
+          {{ item.title }}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </nav>
+</aside>

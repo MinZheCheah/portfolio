@@ -1,0 +1,20 @@
+main:
+  - title: "Home"
+    url: "/"
+
+  - title: "About Me"
+    url: "/about"
+
+  - title: "Projects"
+    url: "/projects"
+
+  - title: "Resume"
+    url: "/resume"
+
+  - title: "LinkedIn"
+    url: "[PROFILE]"
+    external: true
+
+  - title: "GitHub"
+    url: "https://github.com/MinZheCheah"
+    external: true
