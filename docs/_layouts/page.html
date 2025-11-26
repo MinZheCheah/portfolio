@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<button class="mobile-menu-toggle" aria-label="Toggle menu">
+  <span class="hamburger"></span>
+</button>
+
+<div class="page-container">
+  {% include sidebar.html %}
+
+  <main class="main-content">
+    <div class="content-wrapper">
+      {{ content }}
+    </div>
+  </main>
+</div>
