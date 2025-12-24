@@ -29,14 +29,15 @@ jobs:
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        with:
-          static_site_generator: next
-      
+
       - name: Install dependencies
         run: npm ci --legacy-peer-deps
-      
+
       - name: Build with Next.js
         run: npm run build
+
+      - name: List output directory
+        run: ls -la out/
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
