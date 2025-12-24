@@ -129,25 +129,25 @@ export default function Home() {
             <div className="space-y-8 sm:space-y-12">
               {[
                 {
-                  year: "2024",
+                  year: "July 2025 - Present",
                   role: "Software Engineer Intern",
                   company: "Illoominate Ed Tech",
                   description: "Full-stack and mobile development building educational technology solutions.",
-                  tech: ["React", "React Native", "TypeScript", "Node.js"],
+                  tech: ["React", "React Native", "TypeScript", "AWS"],
                 },
                 {
-                  year: "2023",
+                  year: "June 2024 - December 2024",
                   role: "Software Engineer",
                   company: "FHL Vive Center for Enhanced Reality",
                   description: "Backend development and LLM integration for enhanced reality applications.",
                   tech: ["Python", "FastAPI", "LangChain", "OpenAI API"],
                 },
                 {
-                  year: "2023",
+                  year: "June 2023 - September 2023",
                   role: "Data Engineer Intern",
                   company: "See Hau Global",
                   description: "Built data pipelines and analytics infrastructure for business insights.",
-                  tech: ["Python", "SQL", "AWS", "Pandas"],
+                  tech: ["Python", "SQL", "Oracle ERP", "Pandas"],
                 },
               ].map((job, index) => (
                 <div
@@ -204,7 +204,7 @@ export default function Home() {
                   <h3 className="text-lg sm:text-xl font-medium">Bachelor of Arts in Data Science</h3>
                   <div className="text-muted-foreground">University of California, Berkeley</div>
                 </div>
-                <p className="text-muted-foreground leading-relaxed max-w-lg">Expected graduation August 2025. Relevant coursework includes Data Structures & Algorithms, Machine Learning, Data Mining, Data Engineering, Database Systems, and Computer Security.</p>
+                <p className="text-muted-foreground leading-relaxed max-w-lg"> Recently graduated August 2025. Relevant coursework includes Data Structures & Algorithms, Machine Learning, Data Mining, Data Engineering, Structure and Interpretation of Computer Programs, and Computer Security.</p>
               </div>
 
               <div className="lg:col-span-4 flex flex-wrap gap-2 lg:justify-end mt-2 lg:mt-0">
@@ -236,23 +236,36 @@ export default function Home() {
                   excerpt: "AI-powered travel planning application integrating Google Maps, Amadeus, and Instagram APIs. Generates personalized itineraries with cost breakdowns and embedded maps using LangChain and OpenAI.",
                   badge: "Hackathon Winner",
                   tech: ["TypeScript", "Next.js", "Python", "LangChain"],
+                  url: "https://autotripfrontend.vercel.app/",
                 },
                 {
-                  title: "Dropbox Clone",
+                  title: "Secure File Sharing System",
                   excerpt: "Secure file storage and retrieval system implementing end-to-end encryption, HMAC verification, and linked-list data blocks. Features file sharing with public-key encryption and digital signatures.",
                   badge: "Systems Project",
                   tech: ["Go", "Cryptography", "Distributed Systems"],
+                  url: "https://github.com/MinZheCheah/Dropbox-Clone",
                 },
                 {
-                  title: "Prompt Driven",
+                  title: "PDD (Prompt Driven Development)",
                   excerpt: "Open source contribution implementing stdout/stderr capture and display system for CLI tooling. Improved debugging visibility across core operations, reducing debugging time by 20%.",
                   badge: "Open Source",
                   tech: ["Python", "CLI Development"],
+                  url: "https://github.com/promptdriven/pdd",
+                },
+                {
+                  title: "BYOW",
+                  excerpt: "Build Your Own World - A 2D tile-based world exploration engine with procedurally generated environments, interactive gameplay mechanics, and save/load functionality.",
+                  badge: "Game Project",
+                  tech: ["Java", "Data Structures", "Algorithms"],
+                  url: "https://github.com/MinZheCheah/BYOW",
                 },
               ].map((project, index) => (
-                <article
+                <Link
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   key={index}
-                  className="group p-6 sm:p-8 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-500 hover:shadow-lg cursor-pointer"
+                  className="group p-6 sm:p-8 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-500 hover:shadow-lg cursor-pointer block"
                 >
                   <div className="space-y-4">
                     <div className="flex items-center justify-between text-xs text-muted-foreground font-mono">
@@ -276,7 +289,7 @@ export default function Home() {
                       ))}
                     </div>
                   </div>
-                </article>
+                </Link>
               ))}
             </div>
           </div>

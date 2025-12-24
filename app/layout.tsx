@@ -11,7 +11,7 @@ const geist = Geist({
 
 export const metadata: Metadata = {
   title: "Min Zhe Cheah - Software Engineer",
-  description: "Software Engineer & Data Science Student at UC Berkeley, specializing in full-stack development, machine learning, and distributed systems.",
+  description: "Software Engineer & Data Science Student at UC Berkeley, specializing in full-stack development, AI Engineering, and machine learning.",
 }
 
 export default function RootLayout({
