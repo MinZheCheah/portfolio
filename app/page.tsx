@@ -233,10 +233,9 @@ export default function Home() {
               <p className="text-lg text-muted-foreground max-w-lg">
                 Download my resume to learn more about my experience, skills, and education.
               </p>
-              <Link
+              <a
                 href="/portfolio/MinZhe_Cheah_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                download="MinZhe_Cheah_Resume.pdf"
                 className="group inline-flex items-center gap-3 px-6 py-3 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-lg"
               >
                 <svg
@@ -248,7 +247,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
                 <span className="text-foreground group-hover:text-muted-foreground transition-colors duration-300">Download Resume (PDF)</span>
-              </Link>
+              </a>
             </div>
           </div>
         </section>
