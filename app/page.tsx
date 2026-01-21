@@ -265,7 +265,7 @@ export default function Home() {
                 {
                   title: "AutoTrip",
                   excerpt: "AI-powered travel planning application integrating Google Maps, Amadeus, and Instagram APIs. Generates personalized itineraries with cost breakdowns and embedded maps using LangChain and OpenAI.",
-                  badge: "Hackathon Winner",
+                  badge: "CalHacks 12.0",
                   tech: ["TypeScript", "Next.js", "Python", "LangChain"],
                   url: "https://autotripfrontend.vercel.app/",
                 },
@@ -289,6 +289,13 @@ export default function Home() {
                   badge: "Game Project",
                   tech: ["Java", "Data Structures", "Algorithms"],
                   url: "https://github.com/MinZheCheah/BYOW",
+                },
+                {
+                  title: "Aula",
+                  excerpt: "AI-powered course recommendation system for students in UC Berkeley to schedule classes based on academic needs and interests.",
+                  badge: "CalHacks AI Summer 2024",
+                  tech: ["TypeScript", "Next.js", "Python", "Selenium"],
+                  url: "https://github.com/MinZheCheah/Aula",
                 },
               ].map((project, index) => (
                 <Link
