@@ -1,8 +1,8 @@
-name: Deploy Next.js to GitHub Pages
+name: Deploy portfolio to GitHub Pages
 
 on:
   push:
-    branches: ["main"]  # Change to "master" if that's your default branch
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -20,29 +20,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-      
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Install dependencies
-        run: npm ci --legacy-peer-deps
+      - name: Check static site files
+        run: |
+          test -s site/index.html
+          test -s site/lunar-surface.jpg
+          test -s site/portrait.png
+          test -s site/MinZhe_Cheah_Resume.pdf
 
-      - name: Build with Next.js
-        run: npm run build
-
-      - name: List output directory
-        run: ls -la out/
-      
-      - name: Upload artifact
+      - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./site
 
   deploy:
     environment:
